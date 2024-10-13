@@ -42,3 +42,9 @@ Gazebo multi-robot simulator, version 11.10.2
 Copyright (C) 2012 Open Source Robotics Foundation.
 Released under the Apache 2 License.
 http://gazebosim.org
+
+### If you want to tele-operate
+
+1. run `ros2 run teleop_twist_keyboard teleop_twist_keyboard` for keyboard\
+   or `ros2 launch teleop_twist_joy teleop-launch.py` for controller
+2. yey!
