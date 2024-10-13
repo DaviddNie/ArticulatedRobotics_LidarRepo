@@ -35,3 +35,10 @@ If world not loading, model not loading, etc
 ### Tutorial
 
 https://www.youtube.com/watch?v=eJZXRncGaGM&t=722s
+
+### Gazebo version (`gazebo --version`)
+
+Gazebo multi-robot simulator, version 11.10.2
+Copyright (C) 2012 Open Source Robotics Foundation.
+Released under the Apache 2 License.
+http://gazebosim.org
