@@ -1,3 +1,5 @@
+### [Oct 18th Week6 Friday] Update: Depth Camera working, included rviz setup file
+
 ## Robot Package Template
 
 This is a GitHub template. You can make your own copy by clicking the green "Use this template" button.
@@ -48,3 +50,4 @@ http://gazebosim.org
 1. run `ros2 run teleop_twist_keyboard teleop_twist_keyboard` for keyboard\
    or `ros2 launch teleop_twist_joy teleop-launch.py` for controller
 2. yey!
+

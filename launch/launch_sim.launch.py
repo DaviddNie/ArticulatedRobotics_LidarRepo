@@ -13,6 +13,8 @@ from launch_ros.actions import Node
 
 def generate_launch_description():
 
+    rviz_file = 'rviz/config.rviz'
+
 
     # Include the robot_state_publisher launch file, provided by our own package. Force sim time to be enabled
     # !!! MAKE SURE YOU SET THE PACKAGE NAME CORRECTLY !!!
@@ -54,6 +56,12 @@ def generate_launch_description():
                                    '-entity', 'my_bot'],
                         output='screen')
 
+    rvizDis = Node(
+            name='rviz2',
+            package='rviz2',
+            executable='rviz2',
+            output='screen',
+            arguments=['-d', rviz_file])
 
     # diff_drive_spawner = Node(
     #     package="controller_manager",
@@ -93,6 +101,7 @@ def generate_launch_description():
         twist_mux,
         gazebo,
         spawn_entity,
+        rvizDis
         # diff_drive_spawner,
         # joint_broad_spawner
     ])
